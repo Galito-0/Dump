@@ -8,7 +8,7 @@ public class Kvadrati {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        while (a <= b) {
+        while (a <= b) { // dokler je a manjši oz. enak b, izpisuj kvadrate števila a
             System.out.println(a * a);
             a++;
         }

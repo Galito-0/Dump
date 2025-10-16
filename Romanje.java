@@ -8,13 +8,13 @@ public class Romanje {
         int p = sc.nextInt(); // prehojenost prvi dan
         int z = sc.nextInt(); // utrujenost (p - z vsak dan)
 
-        // do {
-        //     int i = 1; // število dneva
-        //     System.out.println(i + ": " + d + "->" + (d-p));
-        //     d -= p; // vsak dan se prehojena razdalja zmanjša za p
-        //     p -= z; // 
-        //     i++; // vsakič naslednji dan
-        // } while ((p - z >= 0) && (d >= 0));
+        do {
+            int i = 1; // število dneva
+            System.out.println(i + ": " + d + "->" + (d-p));
+            d -= p; // vsak dan se prehojena razdalja zmanjša za p
+            p -= z; // 
+            i++; // vsakič naslednji dan
+        } while ((p - z >= 0) && (d >= 0));
 
         while ((p - z > 0) && (d >= 0)) {
             
